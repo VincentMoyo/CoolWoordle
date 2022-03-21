@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78057EAF27E1FD71004606E3 /* KeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78057EAE27E1FD71004606E3 /* KeyboardViewModel.swift */; };
+		788BF91A27E0851B003D3AE6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BF91927E0851B003D3AE6 /* ViewModel.swift */; };
 		78AB015327D8C1D7005A6B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB015227D8C1D7005A6B21 /* AppDelegate.swift */; };
 		78AB015527D8C1D7005A6B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB015427D8C1D7005A6B21 /* SceneDelegate.swift */; };
 		78AB015727D8C1D7005A6B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB015627D8C1D7005A6B21 /* ViewController.swift */; };
 		78AB015A27D8C1D7005A6B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AB015827D8C1D7005A6B21 /* Main.storyboard */; };
 		78AB015C27D8C1E1005A6B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AB015B27D8C1E1005A6B21 /* Assets.xcassets */; };
 		78AB015F27D8C1E1005A6B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AB015D27D8C1E1005A6B21 /* LaunchScreen.storyboard */; };
+		78AB016927D8C610005A6B21 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB016827D8C610005A6B21 /* KeyboardViewController.swift */; };
+		78AB016B27D8C623005A6B21 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB016A27D8C623005A6B21 /* BoardViewController.swift */; };
+		78AB016D27D8CEA4005A6B21 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB016C27D8CEA4005A6B21 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78057EAE27E1FD71004606E3 /* KeyboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewModel.swift; sourceTree = "<group>"; };
+		788BF91927E0851B003D3AE6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		78AB014F27D8C1D7005A6B21 /* CoolWoordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolWoordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AB015227D8C1D7005A6B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78AB015427D8C1D7005A6B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		78AB015B27D8C1E1005A6B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78AB015E27D8C1E1005A6B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78AB016027D8C1E1005A6B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AB016827D8C610005A6B21 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		78AB016A27D8C623005A6B21 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		78AB016C27D8CEA4005A6B21 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78057EAD27E1FD4A004606E3 /* Keyboard-Feature */ = {
+			isa = PBXGroup;
+			children = (
+				78AB016827D8C610005A6B21 /* KeyboardViewController.swift */,
+				78057EAE27E1FD71004606E3 /* KeyboardViewModel.swift */,
+			);
+			path = "Keyboard-Feature";
+			sourceTree = "<group>";
+		};
+		7849427827E3251D00FC736C /* DisplayBloacks-Feature */ = {
+			isa = PBXGroup;
+			children = (
+				78AB016A27D8C623005A6B21 /* BoardViewController.swift */,
+			);
+			path = "DisplayBloacks-Feature";
+			sourceTree = "<group>";
+		};
 		78AB014627D8C1D7005A6B21 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +83,35 @@
 		78AB015127D8C1D7005A6B21 /* CoolWoordle */ = {
 			isa = PBXGroup;
 			children = (
-				78AB015227D8C1D7005A6B21 /* AppDelegate.swift */,
-				78AB015427D8C1D7005A6B21 /* SceneDelegate.swift */,
-				78AB015627D8C1D7005A6B21 /* ViewController.swift */,
-				78AB015827D8C1D7005A6B21 /* Main.storyboard */,
-				78AB015B27D8C1E1005A6B21 /* Assets.xcassets */,
-				78AB015D27D8C1E1005A6B21 /* LaunchScreen.storyboard */,
+				7849427827E3251D00FC736C /* DisplayBloacks-Feature */,
+				78057EAD27E1FD4A004606E3 /* Keyboard-Feature */,
+				78AB016727D8C1F6005A6B21 /* Other */,
+				78AB016627D8C1F1005A6B21 /* Core */,
 				78AB016027D8C1E1005A6B21 /* Info.plist */,
 			);
 			path = CoolWoordle;
+			sourceTree = "<group>";
+		};
+		78AB016627D8C1F1005A6B21 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				78AB015627D8C1D7005A6B21 /* ViewController.swift */,
+				78AB016C27D8CEA4005A6B21 /* KeyCell.swift */,
+				788BF91927E0851B003D3AE6 /* ViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		78AB016727D8C1F6005A6B21 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				78AB015227D8C1D7005A6B21 /* AppDelegate.swift */,
+				78AB015427D8C1D7005A6B21 /* SceneDelegate.swift */,
+				78AB015B27D8C1E1005A6B21 /* Assets.xcassets */,
+				78AB015D27D8C1E1005A6B21 /* LaunchScreen.storyboard */,
+				78AB015827D8C1D7005A6B21 /* Main.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +188,11 @@
 				78AB015727D8C1D7005A6B21 /* ViewController.swift in Sources */,
 				78AB015327D8C1D7005A6B21 /* AppDelegate.swift in Sources */,
 				78AB015527D8C1D7005A6B21 /* SceneDelegate.swift in Sources */,
+				78AB016D27D8CEA4005A6B21 /* KeyCell.swift in Sources */,
+				78AB016927D8C610005A6B21 /* KeyboardViewController.swift in Sources */,
+				78AB016B27D8C623005A6B21 /* BoardViewController.swift in Sources */,
+				788BF91A27E0851B003D3AE6 /* ViewModel.swift in Sources */,
+				78057EAF27E1FD71004606E3 /* KeyboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
